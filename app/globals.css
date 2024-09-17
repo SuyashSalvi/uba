@@ -2,26 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
+  @layer components {
+    .container {
+      @apply mx-auto max-w-6xl xl:max-w-7xl px-8;
+    }
+  }
+
+
+
+/* @layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 210 20% 95%;
+    --foreground: 210 10% 20%;
+    --card: 210 20% 95%;
+    --card-foreground: 210 10% 20%;
+    --popover: 210 20% 95%;
+    --popover-foreground: 210 10% 20%;
+    --primary: 210 80% 50%;
+    --primary-foreground: 210 100% 95%;
+    --secondary: 210 15% 85%;
+    --secondary-foreground: 210 15% 15%;
+    --muted: 210 15% 85%;
+    --muted-foreground: 210 15% 50%;
+    --accent: 210 20% 90%;
+    --accent-foreground: 210 15% 20%;
+    --destructive: 210 70% 50%;
+    --destructive-foreground: 210 20% 95%;
+    --border: 210 10% 80%;
+    --input: 210 10% 80%;
+    --ring: 210 80% 50%;
+    --radius: 0.5rem;
+    --tw-shadow-custom: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
+
+  .dark {
+    --background: 210 20% 10%;
+    --foreground: 210 10% 90%;
+    --card: 210 20% 15%;
+    --card-foreground: 210 10% 90%;
+    --popover: 210 20% 15%;
+    --popover-foreground: 210 10% 90%;
+    --primary: 210 80% 60%;
+    --primary-foreground: 210 100% 90%;
+    --secondary: 210 20% 30%;
+    --secondary-foreground: 210 10% 95%;
+    --muted: 210 20% 30%;
+    --muted-foreground: 210 10% 70%;
+    --accent: 210 20% 25%;
+    --accent-foreground: 210 10% 95%;
+    --destructive: 210 60% 40%;
+    --destructive-foreground: 210 30% 95%;
+    --border: 210 20% 30%;
+    --input: 210 20% 30%;
+    --ring: 210 80% 60%;
+  }
+} */
+
+:root {
+  --background-start: #00bfff; /* Deep Sky Blue */
+  --background-end: #1e90ff;   /* Dodger Blue */
+  --foreground: #0a192f;        /* Dark Blue */
+  --card: #ffffff;              /* White */
+  --card-foreground: #0a192f;  /* Dark Blue */
+  --popover: #ffffff;          /* White */
+  --popover-foreground: #0a192f; /* Dark Blue */
+  --primary: #00bfff;          /* Deep Sky Blue */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #87cefa;        /* Light Sky Blue */
+  --secondary-foreground: #0a192f; /* Dark Blue */
+  --muted: #e0f7ff;            /* Light Blue */
+  --muted-foreground: #0a192f; /* Dark Blue */
+  --accent: #f0f8ff;           /* Alice Blue */
+  --accent-foreground: #0a192f; /* Dark Blue */
+  --destructive: #ff4500;      /* Orange Red */
+  --destructive-foreground: #ffffff; /* White */
+  --border: #b0c4de;           /* Light Steel Blue */
+  --input: #f0f8ff;            /* Alice Blue */
+  --ring: #00bfff;             /* Deep Sky Blue */
+  --radius: 0.5rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.dark {
+  --background-start: #003366; /* Dark Blue */
+  --background-end: #00264d;   /* Even Darker Blue */
+  --foreground: #ffffff;       /* White */
+  --card: #00264d;             /* Even Darker Blue */
+  --card-foreground: #ffffff; /* White */
+  --popover: #00264d;         /* Even Darker Blue */
+  --popover-foreground: #ffffff; /* White */
+  --primary: #1e90ff;          /* Dodger Blue */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #004080;        /* Dark Blue */
+  --secondary-foreground: #ffffff; /* White */
+  --muted: #003366;           /* Dark Blue */
+  --muted-foreground: #ffffff; /* White */
+  --accent: #00264d;          /* Even Darker Blue */
+  --accent-foreground: #ffffff; /* White */
+  --destructive: #ff4500;      /* Orange Red */
+  --destructive-foreground: #ffffff; /* White */
+  --border: #00264d;          /* Even Darker Blue */
+  --input: #00264d;           /* Even Darker Blue */
+  --ring: #1e90ff;            /* Dodger Blue */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+
+
+
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
   }
-}
