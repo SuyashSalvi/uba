@@ -1,10 +1,10 @@
 import "./globals.css";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+  // SignInButton,
+  // SignedIn,
+  // SignedOut,
+  // UserButton
 } from '@clerk/nextjs'
 import type { Metadata } from "next";
 import Providers from "./providers";

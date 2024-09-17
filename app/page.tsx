@@ -17,7 +17,7 @@ export default function Home() {
               User Behavioural Analysis
             </h1>
             <p className="mt-4 text-2xl text-[var(--muted-foreground)]">
-              Get insights into your users' behaviour and optimize your app or website for better user experience.
+              Get insights into your users behaviour and optimize your app or website for better user experience.
             </p>
             <button className="mt-12 px-8 py-4 text-2xl font-semibold text-[var(--primary-foreground)] bg-[var(--primary)] rounded-full hover:bg-[var(--secondary)]">
               Get Started
