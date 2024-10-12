@@ -9,8 +9,8 @@ type NavLink = {
     // { href: '/bookings ', label: 'bookings' },
     // { href: '/reviews ', label: 'reviews' },
     // { href: '/reservations ', label: 'reservations' },
-    // { href: '/rentals/create ', label: 'create rental' },
-    // { href: '/rentals', label: 'my rentals' },
+    { href: '/projects/create ', label: 'create project' },
+    { href: '/projects', label: 'projects' },
     // { href: '/admin', label: 'admin' },
-    // { href: '/profile ', label: 'profile' },
+    { href: '/profile ', label: 'profile' },
   ];

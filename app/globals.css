@@ -14,7 +14,7 @@
 
 
 
-/* @layer base {
+@layer base {
   :root {
     --background: 210 20% 95%;
     --foreground: 210 10% 20%;
@@ -39,6 +39,8 @@
     --tw-shadow-custom: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
+
+
   .dark {
     --background: 210 20% 10%;
     --foreground: 210 10% 90%;
@@ -60,54 +62,9 @@
     --input: 210 20% 30%;
     --ring: 210 80% 60%;
   }
-} */
-
-:root {
-  --background-start: #00bfff; /* Deep Sky Blue */
-  --background-end: #1e90ff;   /* Dodger Blue */
-  --foreground: #0a192f;        /* Dark Blue */
-  --card: #ffffff;              /* White */
-  --card-foreground: #0a192f;  /* Dark Blue */
-  --popover: #ffffff;          /* White */
-  --popover-foreground: #0a192f; /* Dark Blue */
-  --primary: #00bfff;          /* Deep Sky Blue */
-  --primary-foreground: #ffffff; /* White */
-  --secondary: #87cefa;        /* Light Sky Blue */
-  --secondary-foreground: #0a192f; /* Dark Blue */
-  --muted: #e0f7ff;            /* Light Blue */
-  --muted-foreground: #0a192f; /* Dark Blue */
-  --accent: #f0f8ff;           /* Alice Blue */
-  --accent-foreground: #0a192f; /* Dark Blue */
-  --destructive: #ff4500;      /* Orange Red */
-  --destructive-foreground: #ffffff; /* White */
-  --border: #b0c4de;           /* Light Steel Blue */
-  --input: #f0f8ff;            /* Alice Blue */
-  --ring: #00bfff;             /* Deep Sky Blue */
-  --radius: 0.5rem;
 }
 
-.dark {
-  --background-start: #003366; /* Dark Blue */
-  --background-end: #00264d;   /* Even Darker Blue */
-  --foreground: #ffffff;       /* White */
-  --card: #00264d;             /* Even Darker Blue */
-  --card-foreground: #ffffff; /* White */
-  --popover: #00264d;         /* Even Darker Blue */
-  --popover-foreground: #ffffff; /* White */
-  --primary: #1e90ff;          /* Dodger Blue */
-  --primary-foreground: #ffffff; /* White */
-  --secondary: #004080;        /* Dark Blue */
-  --secondary-foreground: #ffffff; /* White */
-  --muted: #003366;           /* Dark Blue */
-  --muted-foreground: #ffffff; /* White */
-  --accent: #00264d;          /* Even Darker Blue */
-  --accent-foreground: #ffffff; /* White */
-  --destructive: #ff4500;      /* Orange Red */
-  --destructive-foreground: #ffffff; /* White */
-  --border: #00264d;          /* Even Darker Blue */
-  --input: #00264d;           /* Even Darker Blue */
-  --ring: #1e90ff;            /* Dodger Blue */
-}
+
 
 
 
